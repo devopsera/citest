@@ -1,13 +1,8 @@
 version: 0.1
 
-workflows:
-  build:
-    jobs:
-      - build
-        context: citest
-
 jobs:
   build:
+    context: citest
     docker:
       - image: nginx:latest 
     steps:
