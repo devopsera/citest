@@ -2,9 +2,8 @@ version: 0.1
 
 jobs:
   build:
-    context: citest
     docker:
-      - image: nginx:latest 
+      - image: circleci/buildpack-deps:stretch
     steps:
       - checkout
       - setup_remote_docker
