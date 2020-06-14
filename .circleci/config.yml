@@ -17,4 +17,3 @@ jobs:
             docker images
             echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USER" --password-stdin
             docker push $IMAGE_NAME:latest
-            docker push docker.io/devopsera123:$IMAGE_NAME:latest
